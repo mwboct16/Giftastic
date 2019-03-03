@@ -5,27 +5,31 @@ html, body {
 
 body {
     font-family: 'Oswald', sans-serif;
+    background-color: #f37d7d;
 }
 
 .container {
-    float: left;
     height: 100%;
     width: 100%;
+    text-align: center;
 }
 
 #heading {
     height: auto;
-    min-height: 35px;
-    width: 100%;
-    margin: 5px;
+    min-height: 35px; 
+    width: 50%;
+    margin: 0 auto;
     clear: both;
     position: relative;
+    background-color: black;
+    
 }
 
 #title {
     font-size: 35px;
     text-align: center;
-    padding-top: 5px;
+    padding: 10px;
+    color: white;
 }
 
 #search-box {
@@ -35,14 +39,32 @@ body {
 }
 
 #gif-display {
-    margin: auto;
-    float: left;
+    float: left; 
+    display: inline-block;
+    margin: 10px;
+    position: relative;
 
 }
 
 #gif-buttons {
-    position: absolute;
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+    min-height: 45px;
+    width: 100%;
+    overflow: hidden;
+    
 }
+
+.gifButton {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    height: 30px;
+    border-radius: 2px;
+    transition: height 2s, width 2s, color 2s;
+}
+
 
 img {
     padding: 5px;
@@ -54,7 +76,11 @@ img {
 }
 
 img:hover {
-    height: 300px;
-    width: 300px;
+    height: 225px;
+    width: 225px;
     transition: height 2s, width 2s;
+}
+
+#gif-button {
+
 }
